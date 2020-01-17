@@ -1,0 +1,728 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+body {
+    margin: 0;
+    color: #303030;
+}
+
+p {
+    padding-bottom: 0.4%;
+}
+
+/* CAROUSEL */
+
+.carousel#locais {
+    top: 8%;
+    width: 47.5%;
+    height: 575px;
+    left: 51.25%;
+    margin: 0;
+}
+
+.carousel#depoiment_rac {
+    left: 2.5%;
+    width: 95%;
+    height: 700px;
+    margin: 0;
+}
+
+/* MENU PRINCIPAL */
+
+.home {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0 2%;
+    background-color: white;
+    background-image: url("../img/mulher.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position-x: 18%;
+    background-position-y: bottom;
+    background-size: 70vh;
+}
+
+.principal {
+    width: 100%;
+    margin: auto;
+    padding-top: 20px
+}
+
+.logo {
+    float: left;
+    width: 75px;
+    height: 75px;
+    position: relative;
+    top: 0;
+    left: 22px;
+    z-index: 15;
+}
+
+.menu {
+    width: 50%;
+    float: right;
+}
+
+.menu ul {
+    list-style: none;
+    position: absolute;
+    top: 5.2%;
+    left: 40%;
+    z-index: 15;
+}
+
+.menu ul li {
+    list-style: none;
+    float: left;
+    font-size: 16px;
+    font-family: "GT America";
+    display: inline-block;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #2c2f33;
+    padding: 0 20px;
+    display: inline-block;
+}
+
+.menu_ani::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #25c4f2;
+    transition: width .3s;
+}
+
+.menu_ani:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.rede {
+    width: 50%;
+    float: right;
+    height: 30px;
+}
+
+.rede ul {
+    list-style: none;
+    position: absolute;
+    top: 4.5%;
+    left: 84%;
+    z-index: 15;
+}
+
+.rede ul li {
+    list-style: none;
+    float: left;
+    display: inline-block;
+}
+
+.rede ul li a {
+    text-decoration: none;
+    color: #2c2f33;
+    padding: 0 20px;
+    display: inline-block;
+    font-size: 22px;
+}
+
+.idioma {
+    font-weight: 620;
+    font-size: 30px;
+    margin-top: 1px;
+}
+
+.menu_ani_m:hover {
+    content: '';
+    color: #25c4f2;
+    transition: .3s;
+}
+
+.rede a#idioma#idiomaa {
+    font-family: 'BebasNeueRegular';
+    letter-spacing: 3px;
+}
+
+.home_texto {
+    padding: 18% 5% 0 56%;
+    font-weight: bold;
+}
+
+.home_titulo {
+    font-family: "Untitled Sans";
+    font-size: 48px;
+    color: #25c4f2;
+    text-align: center;
+}
+
+.home_subtitu {
+    padding-top: 2%;
+    font-family: "GT America";
+    font-size: 18px;
+    font-weight: normal;
+    color: #2c2f33;
+    text-align: center;
+}
+
+.home_cre {
+    padding-top: 2%;
+    padding-left: 2%;
+    font-family: "GT America";
+    font-size: 16px;
+    font-weight: lighter;
+    color: #2c2f33;
+}
+
+.divisao {
+    background-color: #25c4f2;
+    height: 10px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+@media screen and (max-width: 500px) {
+
+    .home {
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        padding: 0 2%;
+        background-color: white;
+        background-image: url("../img/mulher.png");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: bottom;
+        background-size: 50vh;
+    }
+
+    .principal {
+        width: 100%;
+        margin: auto;
+        padding-top: 20px
+    }
+    .home_cre {
+    display: none
+}
+
+    .logo {
+        float: left;
+        width: 60px;
+        height: 60px;
+        position: relative;
+        top: 5px;
+        left: 22px;
+        z-index: 15;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .rede ul {
+        top: 6%;
+        left: 65%;
+    }
+
+    .rede ul li a {
+        padding: 0 8px;
+    }
+
+    .home_texto {
+        padding: 0;
+        font-weight: bold;
+    }
+
+    .home_titulo {
+        font-family: "Untitled Sans";
+        padding-top: 40%;
+        font-size: 30px;
+        color: #25c4f2;
+        text-align: center;
+    }
+
+    .home_subtitu {
+        display: none;
+    }
+
+    .divisao {
+        background-color: #25c4f2;
+        height: 10px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 2%;
+    }
+}
+
+/* TEMAS */
+
+.racismo {
+    background-image: linear-gradient(white, #e1e3e5, white);
+}
+
+.tema_claro_1 {
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.tema_claro_1 img {
+    float: left;
+    left: 0;
+}
+
+.tema_claro_1 h3 {
+    font-size: 25px;
+    font-family: Untitled Sans;
+    color: #2c2f33;
+    padding-top: 20px;
+    padding-left: 550px;
+    padding-right: 2%;
+    padding-bottom: 1%;
+}
+
+.tema_claro_1 p {
+    font-size: 14px;
+    font-family: GT America;
+    color: #6e767e;
+    padding-left: 550px;
+    padding-right: 2%;
+}
+
+.tema_escuro {
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.tema_escuro img {
+    float: right;
+    left: 0;
+}
+
+.tema_escuro h3 {
+    font-size: 25px;
+    font-family: Untitled Sans;
+    color: #2c2f33;
+    padding-top: 20px;
+    padding-left: 2%;
+    padding-right: 550px;
+    padding-bottom: 1%;
+}
+
+.tema_escuro p {
+    font-size: 14px;
+    font-family: GT America;
+    color: #6e767e;
+    padding-left: 2%;
+    padding-right: 550px;
+}
+
+
+.tema_claro_2 {
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.tema_claro_2 img {
+    float: left;
+    left: 0;
+}
+
+.tema_claro_2 h3 {
+    font-size: 25px;
+    font-family: Untitled Sans;
+    color: #2c2f33;
+    padding-top: 20px;
+    padding-left: 550px;
+    padding-right: 2%;
+    padding-bottom: 1%;
+}
+
+.tema_claro_2 p {
+    font-size: 14px;
+    font-family: GT America;
+    color: #6e767e;
+    padding-left: 550px;
+    padding-right: 2%;
+}
+
+@media screen and (max-width: 500px) {
+
+    .tema_claro_1 h3 {
+        font-size: 25px;
+        font-family: Untitled Sans;
+        color: #2c2f33;
+        text-align: center;
+        padding-top: 250px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .tema_claro_1 p {
+        font-size: 14px;
+        font-family: GT America;
+        color: #6e767e;
+        padding-left: 5%;
+        padding-right: 2%;
+    }
+
+    .tema_escuro h3 {
+        font-size: 25px;
+        font-family: Untitled Sans;
+        color: #2c2f33;
+        text-align: center;
+        padding-top: 250px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .tema_escuro p {
+        font-size: 14px;
+        font-family: GT America;
+        color: #6e767e;
+        padding-left: 5%;
+        padding-right: 2%;
+    }
+
+    .tema_claro_2 h3 {
+        font-size: 25px;
+        font-family: Untitled Sans;
+        color: #2c2f33;
+        text-align: center;
+        padding-top: 250px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .tema_claro_2 p {
+        font-size: 14px;
+        font-family: GT America;
+        color: #6e767e;
+        padding-left: 5%;
+        padding-right: 2%;
+    }
+    .tema_claro_1 img {
+        width: 99.9%;
+    }
+    .tema_claro_2 img {
+        width: 99.9%;
+        padding-top: 30px;
+    }
+    
+    .tema_escuro {
+        padding-top: 30px;
+    }
+
+}
+
+/* LOCAIS DE RACISMO */
+
+.local {
+    background: -webkit-gradient(linear, left top, right top, color-stop(51.45%, #f4f6f8), color-stop(48.55%, #04262f));
+    background: linear-gradient(-90deg, #04262f 51.45%, #f4f6f8 48.55%);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 730px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.local_titulo {
+    text-align: center;
+    float: top;
+    padding: 5% 0% 0% 0%;
+    color: white;
+    font-size: 25px;
+}
+
+.local_texto {
+    float: top;
+    text-align: left;
+    color: #a1aebb;
+    padding: 3% 2% 0% 2%;
+    font-size: 16px;
+    height: 540px;
+}
+
+.local_img {
+    position: relative;
+    float: left;
+    padding: 4.5% 0% 0% 3%;
+}
+
+.lado_l {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+}
+
+.pad_top {
+    padding-top: 3%;
+}
+
+.l_titulo {
+    font-size: 24px;
+    padding-top: 10%;
+    padding-left: 2%;
+    font-family: "Untitled Sans";
+    color: #25c4f2;
+    font-weight: bold;
+}
+
+.texto_u_l {
+    font-size: 18px;
+    color: #2c2f33;
+    font-family: "GT America";
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+.baixo_l {
+    padding-top: 11%;
+    padding-left: 2%;
+}
+
+.baixo_titulo_l {
+    padding-top: 2%;
+    font-size: 18px;
+    font-family: "GT America";
+    color: #2c2f33;
+}
+
+.baixo_texto_l {
+    font-size: 16px;
+    font-family: "GT America";
+    color: #6e767e;
+    padding-right: 10%;
+}
+
+@media screen and (max-width: 500px) {
+    .local {
+        background: rgb(4, 38, 47);
+        background: linear-gradient(0deg, rgba(4, 38, 47, 1) 50%, rgba(244, 246, 248, 1) 50%);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 1460px;
+        margin: 0 auto;
+        padding: 0 2%;
+    }
+
+    .baixo_l {
+        padding-top: 25%;
+        padding-left: 2%;
+    }
+
+    .local_titulo {
+        font-size: 23px;
+    }
+
+    .local_texto {
+        font-size: 14px;
+    }
+
+
+    .lado_l {
+        width: 100%;
+    }
+
+    .carousel#locais {
+        top: 52.5%;
+        width: 90%;
+        height: 630px;
+        left: 6%;
+        margin: 0;
+        float: bottom;
+        display: block;
+    }
+}
+
+/* DEPOIMENTOS */
+
+.depoimento {
+    background: #2c2f33;
+    width: 100%;
+    height: 730px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.depoimento_titulo {
+    text-align: center;
+    color: white;
+    padding: 9.5% 0% 0% 0%;
+    font-size: 24px;
+    max-height: 730px;
+    font-family: Untitled Sans;
+}
+
+.depoimento_texto {
+    float: top;
+    text-align: left;
+    color: #a1aebb;
+    height: 484px;
+    padding: 2% 2% 0 42%;
+    font-size: 16px;
+    font-family: GT America;
+}
+
+.depoimento_texto p {
+    padding-top: 0.8%;
+}
+
+.depoimento_img {
+    position: relative;
+    float: left;
+    top: 30px;
+    padding: 4.5% 0% 0% 3%;
+}
+
+.depoimento_img img {
+    height: auto;
+    width: auto;
+}
+
+@media screen and (max-width: 500px) {
+
+    .carousel#depoiment_rac {
+        width: 90%;
+        height: 1040px;
+        left: 6%;
+        margin: 0;
+        float: bottom;
+        display: block;
+    }
+
+    .depoimento {
+        height: 1100px;
+    }
+
+    .depoimento_img {
+        padding: 0 0 0 1%;
+    }
+
+    .depoimento_img img {
+        height: 90%;
+        width: 90%;
+        padding-left: 10%;
+        padding-top: 12%;
+    }
+
+    .depoimento_titulo {
+        margin-top: 70%;
+        padding: 80% 0 0 3%;
+        color: white;
+        font-size: 24px;
+    }
+
+    .depoimento_texto {
+        color: #a1aebb;
+        padding: 5% 0 0 2%;
+        font-size: 14px;
+        max-height: 250px;
+        font-family: GT America;
+    }
+}
+
+/* RODAPE */
+
+.rodape {
+    height: 260px;
+    margin: 0 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape_single {
+    display: inline-block;
+    padding-top: 8%;
+    margin: 0 5%;
+}
+
+
+.rodape_single img {
+    display: inline-block;
+    padding: 0 0 0 0;
+}
+
+.rodape_single i {
+    font-size: 54px;
+    text-align: center;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.rodape_single h3 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Untitled Sans";
+    color: #2c2f33;
+}
+
+.rodape_single p {
+    padding-top: 10px;
+    font-family: "GT America";
+    font-size: 14px;
+}
+
+.rodape_single a {
+    color: #25c4f2;
+}
+.creditos {
+    margin-right: 10%;
+    margin-left: 10%;
+    border-top: 1px solid #25c4f2;
+}
+
+.copy {
+    width: 100%;
+    height: 20px;
+    font-size: 12px;
+    color: #6e767e;
+    opacity: 80%;
+    text-align: center;
+    padding-top: 25px;
+}
+
+#insta_roda {
+    font-size: 40px;
+}
+
+#face_roda {
+    font-size: 40px;
+    margin-left: 20px ;
+}
+
+@media screen and (max-width: 500px) {
+
+    .rodape_single#none_um {
+        display: none;
+    }
+
+    .rodape_single#none_dois {
+        display: none;
+    }
+
+    .rodape {
+        height: 160px;
+        margin: 0 10%;
+    }
+}
